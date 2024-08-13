@@ -16,7 +16,9 @@ public class AgendaContato {
     }
 
     public void exibirContatos() {
-        System.out.println(setContato);
+        for(Contato c : setContato) {
+            System.out.println(c);
+        }
     }
 
     public Set<Contato> pesquisarPorNome(String nome) {
@@ -64,7 +66,7 @@ public class AgendaContato {
         
         //System.out.println( agendaContato.pesquisarPorNome("Lucas"));
         
-        System.out.println(agendaContato.atualizarNumeroContato("Lucas", 456123));
+        // System.out.println(agendaContato.atualizarNumeroContato("Lucas", 456123));
 
         agendaContato.exibirContatos();
     }

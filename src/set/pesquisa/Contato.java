@@ -49,8 +49,7 @@ public class Contato {
     }
     @Override
     public String toString() {
-        return "{" + nome + ", " + numero + "}";
+        return "Contato [nome=" + nome + ", numero=" + numero + "]";
     }
-
     
 }
