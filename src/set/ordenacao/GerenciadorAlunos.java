@@ -34,7 +34,7 @@ public class GerenciadorAlunos {
     }
 
     public Set<Aluno> exibirAlunosPorMedia() {
-        Set<Aluno> alunosPorMedia = new TreeSet<>(new ComparatorMedia());
+        Set<Aluno> alunosPorMedia = new TreeSet<>(new ComparatorMedia().reversed());
         alunosPorMedia.addAll(gerenciadorAlunos);
         return alunosPorMedia;
     }
@@ -42,7 +42,7 @@ public class GerenciadorAlunos {
     public static void main(String[] args) {
         GerenciadorAlunos gerenciadorAlunos = new GerenciadorAlunos();
 
-        gerenciadorAlunos.adicionarAluno("Lucas", 123, 4.8);
+        gerenciadorAlunos.adicionarAluno("Lucas", 123, 9.8);
         gerenciadorAlunos.adicionarAluno("Caio", 133, 7.8);
         gerenciadorAlunos.adicionarAluno("Augusto", 122, 3.8);
 
